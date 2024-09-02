@@ -133,11 +133,20 @@
 */
 
 <input type='button'
+       onclick='count("pplus")'
+       value='+'/>
+<input type='button'
        onclick='count("plus")'
        value='+'/>
 <input type='button'
-       onclick='count("minus")'
-       value='-'/>
+       onclick='count("average")'
+       value='+'/>
+<input type='button'
+       onclick='count("min")'
+       value='+'/>
+<input type='button'
+       onclick='count("mmin")'
+       value='+'/>
 <div id='result'>0</div>
 
 
@@ -150,12 +159,18 @@ function count(type)  {
   let number = resultElement.innerText;
   
   // 더하기/빼기
-  if(type === 'plus') {
+  if(type === 'pplus') {
+    number = parseInt(number) + 4;
+  }else if(type === 'plus')  {
+    number = parseInt(number) + 3;
+  }else if(type === 'average)  {
+    number = parseInt(number) + 2;
+  }else if(type === 'min)  {
     number = parseInt(number) + 1;
-  }else if(type === 'minus')  {
-    number = parseInt(number) - 1;
+  }else if(type === 'mmin)  {
+    number = parseInt(number) + 0;
   }
-  
+
   // 결과 출력
   resultElement.innerText = number;
 }
