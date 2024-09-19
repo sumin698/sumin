@@ -105,6 +105,7 @@
 </html>
 
 <style>
+
 * {
     margin: 0;
     padding: 0;
@@ -151,18 +152,22 @@ h2 {
 .buttons {
     display: flex;
     justify-content: space-between;
-    gap: 3px;
+    gap: 5px;
+    flex-wrap: wrap; /* 버튼이 페이지를 벗어나지 않게 줄 바꿈 가능 */
 }
 
 input[type='button'] {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 8px 15px; /* 버튼 크기 줄이기 */
+    font-size: 14px; /* 폰트 크기 줄이기 */
     background-color: #4a90e2;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    flex-grow: 1; /* 버튼이 동일한 너비를 가지도록 함 */
+    text-align: center;
+    min-width: 90px; /* 최소 버튼 크기 설정 */
 }
 
 input[type='button']:hover {
@@ -179,5 +184,4 @@ input[type='button']:hover {
     font-weight: bold;
     color: #4a90e2;
 }
-
 </style>
