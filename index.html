@@ -152,22 +152,20 @@ h2 {
 .buttons {
     display: flex;
     justify-content: space-between;
-    gap: 5px;
-    flex-wrap: wrap; /* 버튼이 페이지를 벗어나지 않게 줄 바꿈 가능 */
+    gap: 10px; /* 버튼 사이 간격 */
 }
 
 input[type='button'] {
-    padding: 8px 15px; /* 버튼 크기 줄이기 */
-    font-size: 14px; /* 폰트 크기 줄이기 */
+    padding: 10px;
+    font-size: 14px;
     background-color: #4a90e2;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    flex-grow: 1; /* 버튼이 동일한 너비를 가지도록 함 */
+    width: 18%; /* 버튼이 한 줄에 고르게 들어가도록 너비 설정 */
     text-align: center;
-    min-width: 90px; /* 최소 버튼 크기 설정 */
 }
 
 input[type='button']:hover {
@@ -184,4 +182,5 @@ input[type='button']:hover {
     font-weight: bold;
     color: #4a90e2;
 }
+
 </style>
